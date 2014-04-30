@@ -367,6 +367,8 @@ a:active {
 	display: block;
 	float: left;
 	width: 100%;
+	background: #707070;
+	color: #fff;
 }
 .main-navigation ul {
 	list-style: none;
