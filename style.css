@@ -671,3 +671,29 @@ object {
 	max-width: 11.11%;
 }
 .gallery-caption {}
+
+/*--------------------------------------------------------------
+13.0 Structure
+--------------------------------------------------------------*/
+.full {
+	width: 100%;
+}
+.main {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1040px;
+}
+.inner {
+	position: relative;
+	padding: 32px 0;
+}
+#primary {
+	float: left;
+	padding-right: 50px;
+	width: 66.5%;
+}
+#secondary {
+	float: left;
+	width: 33.5%;
+}
+
