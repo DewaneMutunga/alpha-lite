@@ -594,6 +594,15 @@ body, input, textarea, button, legend {
 	margin-bottom: 9px;
 	padding: 10px;
 }
+.site-footer {
+	background: #fff;
+	border: 1px solid #dadada;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-bottom: 9px;
+	padding: 10px;
+}
 
 /*--------------------------------------------------------------
 10.2 Asides
