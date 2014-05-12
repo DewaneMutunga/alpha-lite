@@ -574,18 +574,84 @@ a:active {
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
-.widget {
-	margin: 0 0 1.5em;
+#secondary {
+	font-size: 13px;
 }
-
+.widget {
+	margin: 0 0 45px;
+}
+.widget-title {
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.widget ul {
+	margin: 0;
+}
+.widget .children {
+	border-top: 1px solid #D5E1E4;
+	margin: 5px 0 0;
+}
+.widget li {
+	list-style: none;
+	padding: 5px 0 0;
+}
+.widget li:not(:last-child) {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #D5E1E4;
+}
+.widget li a {
+	text-decoration: none;
+}
+.widget li a:hover {
+	text-decoration: underline;
+}
 /* Make sure select elements fit in widgets */
 .widget select {
 	max-width: 100%;
 }
-
 /* Search widget */
 .widget_search .search-submit {
 	display: none;
+}
+.widget_calendar table {
+	background: #fff;
+	border: 1px solid #D5E1E4;
+}
+.widget_calendar table caption {
+	background: none;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 15px 15px 15px 0;
+} 
+.widget_calendar table th, 
+.widget_calendar table td {
+	text-align: center;
+}
+.widget_calendar table th {
+	padding: 8px 6px;
+}
+.widget_calendar table > thead > tr {
+	background: #34495E;
+	color: #fff;
+}
+.widget_calendar table td {
+	padding: 6px;
+}
+.widget_calendar table tfoot td {
+	padding-bottom: 8px;
+}
+.widget_calendar .widget-title {
+	display: none;
+}
+#secondary .widget .wp-caption img {
+	vertical-align: bottom;
+}
+#secondary .widget .wp-caption-text {
+	background: #FFF;
+	padding: 10px;
+	margin: 0;
 }
 
 /*--------------------------------------------------------------
