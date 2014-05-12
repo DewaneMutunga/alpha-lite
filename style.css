@@ -147,13 +147,18 @@ a img {
 	position: relative;
 	padding: 32px 0;
 }
-#primary { /* content */
+.site-content.inner {
+	padding: 60px 0;
+}
+#primary,
+#secondary {
 	float: left;
+}
+#primary { /* content */
 	padding-right: 50px;
 	width: 66.5%;
 }
 #secondary { /* sidebar */
-	float: left;
 	width: 33.5%;
 }
 
