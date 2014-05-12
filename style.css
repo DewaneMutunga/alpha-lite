@@ -708,10 +708,22 @@ body, input, textarea, button, legend {
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
-.comment-content a {
-	word-wrap: break-word;
+.comments-area {
+	background: #fff;
+	padding: 15px 20px;
+	border: 1px solid #D5E1E4;
 }
 .bypostauthor {
+}
+.comment-author .avatar {
+	float: right;
+}
+.comment-author .fn a {
+	color: #95A5A6;
+	text-decoration: none;
+}
+.comment-content {
+	word-wrap: break-word;
 }
 
 /*--------------------------------------------------------------
