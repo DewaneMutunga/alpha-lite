@@ -199,7 +199,17 @@ dfn, cite, em, i {
 	font-style: italic;
 }
 blockquote {
-	margin: 0 1.5em;
+	position: relative;
+	padding: 20px 20px 20px 40px;
+	margin: 20px 0;
+	text-shadow: #fff 0 1px 1px;
+	color: #373737;
+	font-weight: 500;
+	border-left: 5px solid #1C2841;
+	background:	#f1f1f1;
+	background-size: 3px 3px;
+	quotes: "\201C" "\201D" "\2018" "\2019";
+	clear: both;
 }
 address {
 	margin: 0 0 1.5em;
