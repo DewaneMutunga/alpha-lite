@@ -789,17 +789,100 @@ body, input, textarea, button, legend {
 	padding: 15px 20px;
 	border: 1px solid #D5E1E4;
 }
-.bypostauthor {
+#respond {
+	margin-top: 2em;
+}
+.response-title {
+	font-style: italic;
+}
+.comment-body {
+	font-size: 14px;
+}
+.comment-content a {
+	word-wrap: break-word;
+}
+.comment-body .comment-meta {
+	position: relative;
+	font-size: 13px;
+	border-width: 1px 0;
+	margin-bottom: 1.5em;
+}
+.pingback {
+	position: relative;
+	font-size: 13px;
+}
+.comment-author {
+	background: #F5F5F5;
+	padding: 6px 10px;
+	border-radius: 5px;
+	box-shadow: 0 5px #F1F1F1;
 }
 .comment-author .avatar {
-	float: right;
+	border-radius: 50%;
+	margin: 6px 6px 6px 0;
 }
-.comment-author .fn a {
-	color: #95A5A6;
-	text-decoration: none;
+.comment-author a,
+.comment-metadata a {
+	color: #999;
 }
-.comment-content {
-	word-wrap: break-word;
+.comment-author a:hover,
+.comment-metadata a:hover {
+	color: #404040;
+}
+.comment-metadata {
+	position: absolute;
+		top: 20px;
+		right: 10px;
+}
+.comment-author .fn,
+.comment-author .says {
+	position: relative;
+		top: -12px;
+}
+.comment-list {
+	margin-left: 0;
+}
+ol.comment-list, li.comment {
+	list-style: none;
+}
+.comment-list > .parent [class*="depth-"] {
+	padding-left: 24px;
+	margin-left: 0;
+}
+.comment {
+	margin-top: 2.5em;
+}
+.comment-reply-link {
+	color: #ccc;
+	font-size: 13px;
+}
+#comment-nav-below {
+	margin-top: 16px;
+}
+.comment-navigation {
+	padding: 0;
+	border: none;
+}
+.no-comments { /* comments closed */
+	font-size: 13px;
+	background: #FFFFE0;
+	padding: 5px 10px;
+	text-align: center;
+}
+.bypostauthor .comment-author {
+	color: #fff;
+	padding: 6px 10px;
+	border-radius: 5px;
+	background: #1C2841;
+	box-shadow: 0 5px #d4d4d4;
+}
+.bypostauthor .comment-metadata a,
+.bypostauthor .comment-meta a.url {
+	color: #fff;
+}
+.bypostauthor .comment-metadata a:hover,
+.bypostauthor .comment-meta a.url:hover {
+	color: #404040;
 }
 
 /*--------------------------------------------------------------
