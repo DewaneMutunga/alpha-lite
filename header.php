@@ -25,15 +25,19 @@
 				<div class="site-branding">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+					<nav id="header-navigation" class="header-menu" role="navigation">
+						<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
+					</nav>
 				</div>
-		
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle"><?php _e( 'Primary Menu', 'alpha' ); ?></button>
+			</header><!-- #masthead -->
+			<div class="main-menu-container">
+				<nav id="site-navigation" class="main-navigation clear" role="navigation">
+					<span class="menu-toggle"><?php echo '<i class="fa fa-bars"></i> ' . __( 'Menu', 'alpha' ); ?></span>
 					<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'alpha' ); ?></a>
 		
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-				</nav><!-- #site-navigation -->
-			</header><!-- #masthead -->
+				</nav>
+			</div>
 		</div>
 	</div>
 
