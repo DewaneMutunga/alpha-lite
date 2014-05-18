@@ -205,7 +205,7 @@ blockquote {
 	text-shadow: #fff 0 1px 1px;
 	color: #373737;
 	font-weight: 500;
-	border-left: 10px solid #1C2841;
+	border-left: 10px solid #e44e44;
 	background:	#f1f1f1;
 	background-size: 3px 3px;
 	quotes: "\201C" "\201D" "\2018" "\2019";
@@ -405,15 +405,15 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #d2625a;
 }
-a:visited {
+/*a:visited {
 	color: purple;
-}
+}*/
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #e44e44;
 }
 
 /*--------------------------------------------------------------
@@ -422,8 +422,9 @@ a:active {
 .main-menu-container {
 	position: relative;
 	z-index: 100;
-	background: #1C2841;
+	background: #e44e44;
 	margin-bottom: 20px;
+	border-radius: 5px;
 }
 .main-navigation {
 	clear: both;
@@ -458,7 +459,7 @@ a:active {
 	padding: 15px;
 }
 .header-menu a {
-	color: #999;
+	color: #fff;
 	font-size: 13px;
 }
 .skip-link.screen-reader-text {
@@ -781,7 +782,7 @@ a:active {
 	text-align: right;
 }
 .entry-meta .read-more {
-	color: #E67E22;
+	color: #d2625a;
 	position: absolute;
 	display: inline-block;
 	right: 20px;
@@ -793,7 +794,7 @@ a:active {
 	transition: all .2s;
 }
 .read-more:hover {
-	color: #95A5A6;
+	color: #e44e44;
 }
 .read-more i {
 	margin-left: 3px;
@@ -813,8 +814,8 @@ body, input, textarea, button, legend {
 /*--------------------------------------------------------------
 Header
 --------------------------------------------------------------*/
-.header-area {
-	background: #fff;
+#header-area {
+	background: #d2625a;
 }
 .site-header.inner {
 	padding: 0;
@@ -826,11 +827,14 @@ Header
 	display: inline-block;
 }
 .site-title a {
-	color: #404040;
+	color: #ffffff;
 	text-decoration: none;
 }
 .site-title a:hover {
 	color: #404040;
+}
+.site-description{
+	color: #ffffff;
 }
 
 
@@ -934,7 +938,7 @@ ol.comment-list, li.comment {
 	color: #fff;
 	padding: 6px 10px;
 	border-radius: 5px;
-	background: #1C2841;
+	background: #e44e44;
 	box-shadow: 0 5px #d4d4d4;
 }
 .bypostauthor .comment-metadata a,
@@ -949,6 +953,9 @@ ol.comment-list, li.comment {
 /*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
+#footer-area{
+	background: #d2625a;
+}
 .site-footer {
 	color: #999;
 	font-size: 13px;
