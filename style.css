@@ -957,9 +957,16 @@ Footer
 	background: #d2625a;
 }
 .site-footer {
-	color: #999;
+	color: #fff;
 	font-size: 13px;
 }
+.site-footer a {
+	color: #fff;
+}
+.site-footer a:hover {
+	color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll
