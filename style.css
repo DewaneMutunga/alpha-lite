@@ -691,6 +691,7 @@ a:active {
 --------------------------------------------------------------*/
 #secondary {
 	font-size: 13px;
+	padding-top: 40px;
 }
 .widget {
 	margin: 0 0 45px;
