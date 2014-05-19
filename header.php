@@ -30,6 +30,11 @@
 					</nav>
 				</div>
 			</header><!-- #masthead -->
+		</div>
+	</div>
+	
+	<div id="menu-area" class="full">
+		<div class="main">
 			<div class="main-menu-container">
 				<nav id="site-navigation" class="main-navigation clear" role="navigation">
 					<span class="menu-toggle"><?php echo '<i class="fa fa-bars"></i> ' . __( 'Menu', 'alpha' ); ?></span>
