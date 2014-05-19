@@ -413,8 +413,7 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	border: 1px solid #D5E1E4;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -436,6 +435,9 @@ textarea {
 	padding-left: 3px;
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
+}
+#secondary .search-field {
+	min-width: 215px;
 }
 
 /*--------------------------------------------------------------
