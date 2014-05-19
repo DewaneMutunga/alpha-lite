@@ -206,7 +206,7 @@ blockquote {
 	text-shadow: #fff 0 1px 1px;
 	color: #373737;
 	font-weight: 500;
-	border-left: 10px solid #e44e44;
+	border-left: 5px solid #e44e44;
 	background:	#f1f1f1;
 	background-size: 3px 3px;
 	quotes: "\201C" "\201D" "\2018" "\2019";
@@ -459,10 +459,13 @@ a:active {
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
+#menu-area {
+	background: #45637f;
+}
 .main-menu-container {
 	position: relative;
 	z-index: 100;
-	background: #e44e44;
+	background: #45637f;
 	margin-bottom: 20px;
 	border-radius: 5px;
 }
@@ -498,6 +501,9 @@ a:active {
 	text-decoration: none;
 	padding: 15px;
 }
+.main-navigation a:hover {
+	background: #748BA0;
+}
 .header-menu a {
 	color: #fff;
 	font-size: 13px;
@@ -512,6 +518,7 @@ a:active {
 	position: absolute;
 		top: 54px;
 	z-index: 99999;
+	background: #45637f;
 }
 .main-navigation .menu > li > .sub-menu,
 .main-navigation .menu > li > .sub-menu > li:last-child a:hover {
@@ -766,6 +773,9 @@ a:active {
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
+#content-area {
+	background: #f1f1f1;
+}
 .sticky {
 }
 .hentry {
@@ -844,7 +854,7 @@ a:active {
 	margin: 0 0 1.5em;
 }
 body {
-	background: #f1f1f1;
+	background: #d2625a;
 }
 body, input, textarea, button, legend {
 	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
@@ -919,8 +929,7 @@ Header
 .comment-author {
 	background: #F5F5F5;
 	padding: 6px 10px;
-	border-radius: 5px;
-	box-shadow: 0 5px #F1F1F1;
+	border-left: 5px solid #e44e44;
 }
 .comment-author .avatar {
 	border-radius: 50%;
@@ -932,7 +941,7 @@ Header
 }
 .comment-author a:hover,
 .comment-metadata a:hover {
-	color: #404040;
+	color: #e44e44;
 }
 .comment-metadata {
 	position: absolute;
@@ -977,9 +986,8 @@ ol.comment-list, li.comment {
 .bypostauthor .comment-author {
 	color: #fff;
 	padding: 6px 10px;
-	border-radius: 5px;
 	background: #e44e44;
-	box-shadow: 0 5px #d4d4d4;
+	border-left: 5px solid #999;
 }
 .bypostauthor .comment-metadata a,
 .bypostauthor .comment-meta a.url {
@@ -1133,6 +1141,7 @@ Responsive
 	}
 	.main-navigation {
 		padding-left: 0;
+		margin-top: 15px;
 	}
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
