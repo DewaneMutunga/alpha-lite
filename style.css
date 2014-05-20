@@ -783,7 +783,6 @@ a:active {
 .hentry {
 	position: relative;
 	background: #fff;
-	border: 1px solid #D5E1E4;
 	margin: 0 0 30px;
 }
 .entry-header,
@@ -904,7 +903,6 @@ Header
 .comments-area {
 	background: #fff;
 	padding: 15px 20px;
-	border: 1px solid #D5E1E4;
 }
 #respond {
 	margin-top: 2em;
