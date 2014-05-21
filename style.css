@@ -508,6 +508,7 @@ a:active {
 .header-menu a {
 	color: #fff;
 	font-size: 14px;
+	text-decoration: none;
 }
 .skip-link.screen-reader-text {
 	padding: 0;
