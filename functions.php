@@ -90,6 +90,7 @@ add_action( 'widgets_init', 'alpha_widgets_init' );
  */
 function alpha_scripts() {
 	wp_enqueue_style( 'alpha-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'googlefonts', 'http://fonts.googleapis.com/css?family=Droid+Sans:700|Nobile' );
 	wp_enqueue_style( 'fontawesome', get_stylesheet_directory_uri() . '/inc/fonts/font-awesome/css/font-awesome.min.css' );
 	wp_enqueue_script( 'alpha-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'alpha-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
