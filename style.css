@@ -585,13 +585,13 @@ a:active {
 .navigation a,
 .store-pagination a,
 .comment-navigation a {
-	color: #999;
+	color: #d2625a;
 }
 .navigation a:hover,
 .store-pagination a:hover,
 .page-numbers.current,
 .comment-navigation a:hover {
-	color: #404040;
+	color: #e44e44;
 }
 .nav-previous .fa {
 	margin-right: 6px;
