@@ -1133,6 +1133,9 @@ Responsive
 }
 
 @media screen and (max-width: 768px) {
+	#header-area {
+		margin-bottom: -20px;
+	}
 	.site-header {
 		text-align: center;
 	}
