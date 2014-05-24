@@ -818,6 +818,7 @@ a:active {
 }
 .entry-meta a {
 	color: #d2625a;
+	text-decoration: none;
 }
 .entry-title a:hover {
 	color: #e44e44;
@@ -832,6 +833,16 @@ a:active {
 .single .byline,
 .group-blog .byline {
 	display: inline;
+}
+.byline, .posted-on {
+	margin-right: 2em;
+}
+.comments-link {
+	float: right;
+}
+.entry-header .entry-meta .fa, .entry-meta .tax-links .fa {
+	margin-right: 6px;
+	color: #45637f;
 }
 .cats-tags {
 	display: block;
@@ -866,6 +877,14 @@ a:active {
 }
 body {
 	background: #d2625a;
+}
+.sidenote, .edd_has_purchased {
+	color: #ffffff;
+	background: #45637f;
+	border: 15px solid #748BA0;
+	border-width: 0 0 0 15px;
+	margin: 30px -75px;
+	padding: 30px 75px 30px 60px;
 }
 
 /*--------------------------------------------------------------
