@@ -56,3 +56,5 @@
 		<?php alpha_post_nav(); ?>
 	</div>
 </article>
+
+<?php alpha_author_box(); ?>
