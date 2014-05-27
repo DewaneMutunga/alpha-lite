@@ -886,6 +886,31 @@ body {
 	margin: 30px -75px;
 	padding: 30px 75px 30px 60px;
 }
+.single-post-footer {
+	margin-bottom: 3em;
+}
+.single-post-footer {
+	color: #fff;
+	padding: 16px 32px 32px;
+	background: #45637f;
+}
+.single-post-footer .post-footer-author {
+	position: relative;
+	border-bottom: 2px solid rgba(0,0,0,.05);
+	margin-bottom: 1.5em;
+}
+.post-footer-author-bio p:last-child {
+	margin-bottom: 0;
+}
+.post-footer-author .avatar {
+	border-radius: 50%;
+	margin: 6px 6px 12px 0;
+}
+.author-name {
+	display: inline-block;
+	font-size: 18px;
+}
+
 
 /*--------------------------------------------------------------
 Header
