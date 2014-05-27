@@ -1085,10 +1085,11 @@ Footer
 }
 .site-footer {
 	color: #fff;
-	font-size: 13px;
+	font-size: 14px;
 }
 .site-footer a {
 	color: #fff;
+	text-decoration: none;
 }
 .site-footer a:hover {
 	color: #fff;
