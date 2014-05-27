@@ -942,16 +942,24 @@ Header
 }
 .site-title {
 	display: inline-block;
+	margin-bottom: 10px;
 }
 .site-title a {
 	color: #d2625a;
 	text-decoration: none;
-	font-size: 1.6em;
+	font-size: 2em;
+	font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, sans-serif;
+	clear: both;
+	margin-bottom: 15px;
+	letter-spacing: -1px;
 }
 .site-title a:hover {
 	color: #404040;
 }
-.site-description{
+.site-description {
+	font-family: 'Nobile', 'Lucida Grande',  sans-serif;
+	font-size: 13px;
+	font-weight: normal;
 	color: #d2625a;
 }
 
