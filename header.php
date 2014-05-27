@@ -23,8 +23,8 @@
 		<div class="main">
 			<header id="masthead" class="site-header inner" role="banner">
 				<div class="site-branding">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+					<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+					<h1 class="site-description"><?php bloginfo( 'description' ); ?></h1>
 					<nav id="header-navigation" class="header-menu" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
 					</nav>
