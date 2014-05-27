@@ -971,6 +971,9 @@ Header
 	background: #fff;
 	padding: 15px 20px;
 }
+.comment-form label {
+	display: inherit;
+}
 #respond {
 	margin-top: 2em;
 }
