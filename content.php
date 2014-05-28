@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Alpha
+ * @package alpha_lite
  */
 ?>
 
@@ -22,7 +22,7 @@
 		<?php the_excerpt(); ?>
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php alpha_posted_on(); ?>
+			<?php alpha_lite_posted_on(); ?>
 			<?php echo '<a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Read More <i class="fa fa-arrow-circle-right"></i></a>'; ?>
 		</div>
 		<?php endif; ?>

@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package Alpha
+ * @package alpha_lite
  */
 ?>
 
@@ -16,9 +16,9 @@
 		<div class="main">
 			<footer id="colophon" class="site-footer inner" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'alpha' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'alpha' ), 'WordPress' ); ?></a>
+					<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'alpha_lite' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'alpha_lite' ), 'WordPress' ); ?></a>
 					<span class="sep"> | </span>
-					<?php printf( __( 'Theme: %1$s by %2$s.', 'alpha' ), 'Alpha', '<a href="http://dewanemutunga.com" rel="designer">Dewane Mutunga</a>' ); ?>
+					<?php printf( __( 'Theme: %1$s by %2$s.', 'alpha_lite' ), 'alpha_lite', '<a href="http://dewanemutunga.com" rel="designer">Dewane Mutunga</a>' ); ?>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div>

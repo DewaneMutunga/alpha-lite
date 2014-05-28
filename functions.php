@@ -1,8 +1,8 @@
 <?php
 /**
- * Alpha functions and definitions
+ * alpha_lite functions and definitions
  *
- * @package Alpha
+ * @package alpha_lite
  */
 
 /**
@@ -12,7 +12,7 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
-if ( ! function_exists( 'alpha_setup' ) ) :
+if ( ! function_exists( 'alpha_lite_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -20,15 +20,15 @@ if ( ! function_exists( 'alpha_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function alpha_setup() {
+function alpha_lite_setup() {
 
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Alpha, use a find and replace
-	 * to change 'alpha' to the name of your theme in all the template files
+	 * If you're building a theme based on alpha_lite, use a find and replace
+	 * to change 'alpha_lite' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'alpha', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'alpha_lite', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -42,15 +42,15 @@ function alpha_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'alpha' ),
-		'header' => __( 'Header Menu', 'alpha' )
+		'primary' => __( 'Primary Menu', 'alpha_lite' ),
+		'header' => __( 'Header Menu', 'alpha_lite' )
 	) );
 
 	// Enable support for Post Formats.
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
 
 	// Setup the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'alpha_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'alpha_lite_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
@@ -64,17 +64,17 @@ function alpha_setup() {
 		'caption',
 	) );
 }
-endif; // alpha_setup
-add_action( 'after_setup_theme', 'alpha_setup' );
+endif; // alpha_lite_setup
+add_action( 'after_setup_theme', 'alpha_lite_setup' );
 
 /**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function alpha_widgets_init() {
+function alpha_lite_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'alpha' ),
+		'name'          => __( 'Sidebar', 'alpha_lite' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -83,22 +83,22 @@ function alpha_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 }
-add_action( 'widgets_init', 'alpha_widgets_init' );
+add_action( 'widgets_init', 'alpha_lite_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function alpha_scripts() {
-	wp_enqueue_style( 'alpha-style', get_stylesheet_uri() );
+function alpha_lite_scripts() {
+	wp_enqueue_style( 'alpha_lite-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'googlefonts', 'http://fonts.googleapis.com/css?family=Droid+Sans:700|Nobile:400,400italic,700' );
 	wp_enqueue_style( 'fontawesome', get_stylesheet_directory_uri() . '/inc/fonts/font-awesome/css/font-awesome.min.css' );
-	wp_enqueue_script( 'alpha-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-	wp_enqueue_script( 'alpha-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'alpha_lite-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'alpha_lite-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'alpha_scripts' );
+add_action( 'wp_enqueue_scripts', 'alpha_lite_scripts' );
 
 /**
  * Implement the Custom Header feature.

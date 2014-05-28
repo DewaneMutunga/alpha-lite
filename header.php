@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package Alpha
+ * @package alpha_lite
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -37,8 +37,8 @@
 		<div class="main">
 			<div class="main-menu-container">
 				<nav id="site-navigation" class="main-navigation clear" role="navigation">
-					<span class="menu-toggle"><?php echo '<i class="fa fa-bars"></i> ' . __( 'Menu', 'alpha' ); ?></span>
-					<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'alpha' ); ?></a>
+					<span class="menu-toggle"><?php echo '<i class="fa fa-bars"></i> ' . __( 'Menu', 'alpha_lite' ); ?></span>
+					<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'alpha_lite' ); ?></a>
 		
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</nav>

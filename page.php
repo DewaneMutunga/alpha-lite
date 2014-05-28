@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package Alpha
+ * @package alpha_lite
  */
 
 get_header(); ?>
