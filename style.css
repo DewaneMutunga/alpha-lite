@@ -1093,6 +1093,7 @@ Footer
 }
 .site-footer a:hover {
 	color: #fff;
+	text-decoration: none;
 }
 
 
