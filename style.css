@@ -810,10 +810,14 @@ a:active {
 }
 .entry-header,
 .entry-summary,
-.entry-content {
+.entry-content,
+.entry-footer {
 	padding: 15px 20px;
 }
 .entry-header {
+	padding-bottom: 0;
+}
+.entry-footer {
 	padding-bottom: 0;
 }
 .featured-img {
