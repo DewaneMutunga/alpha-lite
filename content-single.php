@@ -18,7 +18,15 @@
 
 		<div class="entry-meta">
 			<?php alpha_posted_on(); ?>
-			<?php
+		</div>
+	</header>
+
+	<div class="entry-content">
+		<?php the_content(); ?>
+	</div>
+	
+	<footer class="entry-meta entry-footer">
+		<?php
 				/* translators: used between list items, there is a space after the comma */
 				$category_list = get_the_category_list( __( ', ', 'alpha' ) );
 	
@@ -42,19 +50,14 @@
 				} // end check for categories on this blog	
 				printf( $meta_text, $category_list, $tag_list );
 			?>
-		</div>
-	</header>
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
+			<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'alpha' ),
 				'after'  => '</div>',
 			) );
-		?>		
-		<?php alpha_post_nav(); ?>
-	</div>
+			?>		
+			<?php alpha_post_nav(); ?>
+	</footer>
 </article>
 
 <?php alpha_author_box(); ?>
