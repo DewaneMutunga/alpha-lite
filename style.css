@@ -1000,12 +1000,16 @@ Header
 }
 .comment-content a {
 	word-wrap: break-word;
+	text-decoration: none;
 }
 .comment-body .comment-meta {
 	position: relative;
 	font-size: 13px;
 	border-width: 1px 0;
 	margin-bottom: 1.5em;
+}
+.comment-meta a {
+	text-decoration: none;
 }
 .pingback {
 	position: relative;
