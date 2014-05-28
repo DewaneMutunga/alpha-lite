@@ -47,18 +47,6 @@ function alpha_lite_customize_register( $wp_customize ) {
 		'priority'	=> 50,
 		'type'      => 'checkbox',
 	) );
-	// credits & copyright
-	$wp_customize->get_setting( 'alpha_lite_credits_copyright' )->transport = 'postMessage';
-	$wp_customize->add_setting( 'alpha_lite_credits_copyright', array( 
-		'default' => null,
-		'sanitize_callback' => 'alpha_lite_sanitize_link_text' 
-	) );
-	$wp_customize->add_control( 'alpha_lite_credits_copyright', array(
-		'label'		=> __( 'Footer Credits & Copyright', 'alpha_lite' ),
-		'section'	=> 'alpha_lite_content_section',
-		'settings'	=> 'alpha_lite_credits_copyright',
-		'priority'	=> 70,
-	) );
 	// twitter url
 	$wp_customize->add_setting( 'alpha_lite_twitter', array( 
 		'default' => null,
@@ -102,6 +90,18 @@ function alpha_lite_customize_register( $wp_customize ) {
 		'section'	=> 'alpha_lite_content_section',
 		'settings'	=> 'alpha_lite_linkedin',
 		'priority'	=> 110,
+	) );
+	// credits & copyright
+	$wp_customize->get_setting( 'alpha_lite_credits_copyright' )->transport = 'postMessage';
+	$wp_customize->add_setting( 'alpha_lite_credits_copyright', array( 
+		'default' => null,
+		'sanitize_callback' => 'alpha_lite_sanitize_link_text' 
+	) );
+	$wp_customize->add_control( 'alpha_lite_credits_copyright', array(
+		'label'		=> __( 'Footer Credits & Copyright', 'alpha_lite' ),
+		'section'	=> 'alpha_lite_content_section',
+		'settings'	=> 'alpha_lite_credits_copyright',
+		'priority'	=> 120,
 	) );
 	
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
