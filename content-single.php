@@ -60,4 +60,13 @@
 	</footer>
 </article>
 
-<?php alpha_lite_author_box(); ?>
+<div class="single-post-footer clear">
+	<div class="post-footer-author">
+		<?php echo get_avatar( get_the_author_meta( 'ID' ), 32, '', get_the_author_meta( 'display_name' ) ); ?>
+		<span class="author-name"><?php echo __( 'This post was written by ', 'alpha_lite' ) . get_the_author_meta( 'display_name' ); ?></span>	
+	</div>
+	<div class="post-footer-author-bio">
+		<p><?php echo get_the_author_meta( 'description' ); ?></p>
+	</div>
+	<?php do_action( 'social_profiles' ); ?>
+</div>
