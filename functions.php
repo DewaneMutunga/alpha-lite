@@ -122,7 +122,7 @@ function alpha_lite_nav_fallback() { ?>
 		<ul class="menu nav-menu">
 			<li class="menu-item">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo get_bloginfo( 'description' ); ?>">
-					<?php _e( 'Home', 'alpha-lite' ); ?>
+					<?php _e( 'Home', 'alpha_lite' ); ?>
 				</a>
 			</li>
 		</ul>
