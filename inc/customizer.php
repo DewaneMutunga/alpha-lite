@@ -61,8 +61,20 @@ function alpha_lite_customize_register( $wp_customize ) {
 			'id'			=> 'alpha_lite_credits_copyright',
 			'default'		=> null
 		),
-		'social profiles'	=> array(
-			'id'			=> 'alpha_lite_social_profiles',
+		'twitter'			=> array(
+			'id'			=> 'alpha_lite_twitter',
+			'default'		=> null
+		),
+		'facebook'			=> array(
+			'id'			=> 'alpha_lite_facebook',
+			'default'		=> null
+		),
+		'gplus'				=> array(
+			'id'			=> 'alpha_lite_gplus',
+			'default'		=> null
+		),
+		'linkedin'			=> array(
+			'id'			=> 'alpha_lite_linkedin',
 			'default'		=> null
 		),
 	);
@@ -83,33 +95,33 @@ function alpha_lite_customize_register( $wp_customize ) {
 			'id'					=> 'alpha_lite_twitter',
 			'label'					=> __( 'Twitter Profile URL', 'alpha_lite' ),
 			'section'				=> 'alpha_lite_social_section',
-			'settings'				=> 'alpha_lite_social_profiles',
-			'priority'				=> 50,
-		),'alpha_lite_facebook'		=> array(
+			'priority'				=> 10,
+		),
+		'alpha_lite_facebook'		=> array(
 			'id'					=> 'alpha_lite_facebook',
 			'label'					=> __( 'Facebook Profile URL', 'alpha_lite' ),
 			'section'				=> 'alpha_lite_social_section',
-			'settings'				=> 'alpha_lite_social_profiles',
-			'priority'				=> 60,
-		),'alpha_lite_gplus'		=> array(
+			'priority'				=> 20,
+		),
+		'alpha_lite_gplus'			=> array(
 			'id'					=> 'alpha_lite_gplus',
 			'label'					=> __( 'Google Plus Profile URL', 'alpha_lite' ),
 			'section'				=> 'alpha_lite_social_section',
-			'settings'				=> 'alpha_lite_social_profiles',
-			'priority'				=> 70,
-		),'alpha_lite_linkedin'		=> array(
+			'priority'				=> 30,
+		),
+		'alpha_lite_linkedin'		=> array(
 			'id'					=> 'alpha_lite_linkedin',
 			'label'					=> __( 'LinkedIn Profile URL', 'alpha_lite' ),
 			'section'				=> 'alpha_lite_social_section',
 			'settings'				=> 'alpha_lite_social_profiles',
-			'priority'				=> 80,
+			'priority'				=> 40,
 		),
 		'alpha_lite_credits_copyright'		=> array(
 			'id'					=> 'alpha_lite_credits_copyright',
 			'label'					=> __( 'Footer Credits & Copyright', 'alpha_lite' ),
 			'section'				=> 'alpha_lite_content_section',
 			'settings'				=> 'alpha_lite_credits_copyright',
-			'priority'				=> 50,
+			'priority'				=> 10,
 		),
 	);
 	// Build the text input controls based on the $add_text_controls
@@ -117,7 +129,6 @@ function alpha_lite_customize_register( $wp_customize ) {
 		$wp_customize->add_control( $control[ 'id' ], array(
 			'label'		=> $control[ 'label' ],
 			'section'	=> $control[ 'section' ],
-			'settings'	=> $control[ 'settings' ],
 			'priority'	=> $control[ 'priority' ]
 		) );
 	}
