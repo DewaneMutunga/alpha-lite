@@ -48,19 +48,6 @@ $title = get_bloginfo('name');
 			</header><!-- #masthead -->
 		</div>
 	</div>
-	
-	<div id="menu-area" class="full">
-		<div class="main">
-			<div class="main-menu-container">
-				<nav id="site-navigation" class="main-navigation clear" role="navigation">
-					<span class="menu-toggle"><?php echo '<i class="fa fa-bars"></i> ' . __( 'Menu', 'alpha_lite' ); ?></span>
-					<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'alpha_lite' ); ?></a>
-		
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => 'alpha_lite_nav_fallback' ) ); ?>
-				</nav>
-			</div>
-		</div>
-	</div>
 
 	<div id="content-area" class="full">
 		<div class="main">	

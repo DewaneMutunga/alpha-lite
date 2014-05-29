@@ -50,7 +50,6 @@ function alpha_lite_setup() {
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'alpha_lite' ),
 		'header' => __( 'Header Menu', 'alpha_lite' )
 	) );
 
