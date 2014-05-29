@@ -152,19 +152,19 @@ function alpha_lite_social_profiles() {
 			<?php
 				$social_profiles = array( 
 					'twitter'	=> array(
-						'icon' 		=> '<i class="fa fa-twitter-square"></i>',
+						'icon' 		=> '<i class="fa fa-twitter-square fa-lg"></i>',
 						'option'	=> esc_url( get_theme_mod( 'alpha_lite_twitter' ) )
 					),
 					'facebook'	=> array(
-						'icon' 		=> '<i class="fa fa-facebook-square"></i>',
+						'icon' 		=> '<i class="fa fa-facebook-square fa-lg"></i>',
 						'option'	=> esc_url( get_theme_mod( 'alpha_lite_facebook' ) )
 					),
 					'gplus'	=> array(
-						'icon' 		=> '<i class="fa fa-google-plus-square"></i>',
+						'icon' 		=> '<i class="fa fa-google-plus-square fa-lg"></i>',
 						'option'	=> esc_url( get_theme_mod( 'alpha_lite_gplus' ) )
 					),
 					'linkedin'	=> array(
-						'icon' 		=> '<i class="fa fa-linkedin-square"></i>',
+						'icon' 		=> '<i class="fa fa-linkedin-square fa-lg"></i>',
 						'option'	=> esc_url( get_theme_mod( 'alpha_lite_linkedin' ) )
 					),
 				);
