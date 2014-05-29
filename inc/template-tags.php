@@ -149,23 +149,16 @@ if ( ! function_exists( 'alpha_lite_author_box' ) ) :
  */
 function alpha_lite_author_box() {
 	?>
-	<?php // show post footer? theme customizer options ?>
-	<?php if ( get_theme_mod( 'alpha_lite_lite_post_footer' ) == 1 ) : ?>
-		<div class="single-post-footer clear">
-			<div class="post-footer-author">
-				<?php echo get_avatar( get_the_author_meta( 'ID' ), 32, '', get_the_author_meta( 'display_name' ) ); ?>
-				<span class="author-name"><?php echo __( 'This post was written by ', 'alpha_lite' ) . get_the_author_meta( 'display_name' ); ?></span>	
-			</div>
-			<?php if ( ! get_the_author_meta( 'description' ) == '' ) : ?>
-				<div class="post-footer-author-bio">
-					<p><?php echo get_the_author_meta( 'description' ); ?></p>
-				</div>
-			<?php endif; ?>
-			<div class="post-footer-social-profiles">
-				<?php do_action( 'social_profiles' ); ?>
-			</div>
+	<div class="single-post-footer clear">
+		<div class="post-footer-author">
+			<?php echo get_avatar( get_the_author_meta( 'ID' ), 32, '', get_the_author_meta( 'display_name' ) ); ?>
+			<span class="author-name"><?php echo __( 'This post was written by ', 'alpha_lite' ) . get_the_author_meta( 'display_name' ); ?></span>	
 		</div>
-	<?php endif; ?>
+		<div class="post-footer-author-bio">
+			<p><?php echo get_the_author_meta( 'description' ); ?></p>
+		</div>
+		<?php do_action( 'social_profiles' ); ?>
+	</div>
 	<?php
 }
 endif;
@@ -173,26 +166,26 @@ endif;
 /**
  * social profiles
  */
-function alpha_lite_lite_social_profiles() {
-	if ( get_theme_mod( 'alpha_lite_lite_twitter' ) || get_theme_mod( 'alpha_lite_lite_facebook' ) || get_theme_mod( 'alpha_lite_lite_gplus' ) || get_theme_mod( 'alpha_lite_lite_linkedin' ) ) : ?>
+function alpha_lite_social_profiles() {
+	if ( get_theme_mod( 'alpha_lite_twitter' ) || get_theme_mod( 'alpha_lite_facebook' ) || get_theme_mod( 'alpha_lite_gplus' ) || get_theme_mod( 'alpha_lite_linkedin' ) ) : ?>
 		<div class="social-links">
 			<?php
 				$social_profiles = array( 
 					'twitter'	=> array(
 						'icon' 		=> '<i class="fa fa-twitter-square"></i>',
-						'option'	=> esc_url( get_theme_mod( 'alpha_lite_lite_twitter' ) )
+						'option'	=> esc_url( get_theme_mod( 'alpha_lite_twitter' ) )
 					),
 					'facebook'	=> array(
 						'icon' 		=> '<i class="fa fa-facebook-square"></i>',
-						'option'	=> esc_url( get_theme_mod( 'alpha_lite_lite_facebook' ) )
+						'option'	=> esc_url( get_theme_mod( 'alpha_lite_facebook' ) )
 					),
 					'gplus'	=> array(
 						'icon' 		=> '<i class="fa fa-google-plus-square"></i>',
-						'option'	=> esc_url( get_theme_mod( 'alpha_lite_lite_gplus' ) )
+						'option'	=> esc_url( get_theme_mod( 'alpha_lite_gplus' ) )
 					),
 					'linkedin'	=> array(
 						'icon' 		=> '<i class="fa fa-linkedin-square"></i>',
-						'option'	=> esc_url( get_theme_mod( 'alpha_lite_lite_linkedin' ) )
+						'option'	=> esc_url( get_theme_mod( 'alpha_lite_linkedin' ) )
 					),
 				);
 				foreach ( $social_profiles as $profile ) {
@@ -205,4 +198,4 @@ function alpha_lite_lite_social_profiles() {
 	<?php 
 	endif; // end check for any social profile
 }
-add_action( 'social_profiles', 'alpha_lite_lite_social_profiles' );
+add_action( 'social_profiles', 'alpha_lite_social_profiles' );
