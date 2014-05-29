@@ -54,9 +54,6 @@ function alpha_lite_setup() {
 		'header' => __( 'Header Menu', 'alpha_lite' )
 	) );
 
-	// Enable support for Post Formats.
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
-
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'alpha_lite_custom_background_args', array(
 		'default-color' => 'ffffff',

@@ -35,33 +35,6 @@ get_header(); ?>
 						elseif ( is_year() ) :
 							printf( __( 'Year: %s', 'alpha_lite' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'alpha_lite' ) ) . '</span>' );
 
-						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', 'alpha_lite' );
-
-						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
-							_e( 'Galleries', 'alpha_lite');
-
-						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', 'alpha_lite');
-
-						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							_e( 'Videos', 'alpha_lite' );
-
-						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', 'alpha_lite' );
-
-						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							_e( 'Links', 'alpha_lite' );
-
-						elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
-							_e( 'Statuses', 'alpha_lite' );
-
-						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
-							_e( 'Audios', 'alpha_lite' );
-
-						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
-							_e( 'Chats', 'alpha_lite' );
-
 						else :
 							_e( 'Archives', 'alpha_lite' );
 
