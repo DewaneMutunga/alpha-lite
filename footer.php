@@ -17,7 +17,7 @@
 			<footer id="colophon" class="site-footer inner" role="contentinfo">
 				<div class="site-info">
 					<?php
-						$credits = __( 'Built with WordPress & <a href="' . AL_HOME . '">' . AL_NAME . '</a>', 'alpha_lite' );        
+						$credits = sprintf( __( 'Built with WordPress & %s', 'alpha_lite' ), '<a href="' . AL_HOME . '">' . AL_NAME . '</a>' );
                         // If copyright & credits are left empty or have not been set, display default info.
                         if ( '' == get_theme_mod( 'alpha_lite_credits_copyright' ) ) :
                                 echo $credits;
