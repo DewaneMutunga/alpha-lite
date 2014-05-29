@@ -42,7 +42,7 @@ $title = get_bloginfo('name');
 					</span>
 					<h1 class="site-description"><?php bloginfo( 'description' ); ?></h1>
 					<nav id="header-navigation" class="header-menu" role="navigation">
-						<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'header', 'fallback_cb' => 'alpha_lite_nav_fallback' ) ); ?>
 					</nav>
 				</div>
 			</header><!-- #masthead -->
@@ -56,7 +56,7 @@ $title = get_bloginfo('name');
 					<span class="menu-toggle"><?php echo '<i class="fa fa-bars"></i> ' . __( 'Menu', 'alpha_lite' ); ?></span>
 					<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'alpha_lite' ); ?></a>
 		
-					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => 'alpha_lite_nav_fallback' ) ); ?>
 				</nav>
 			</div>
 		</div>
