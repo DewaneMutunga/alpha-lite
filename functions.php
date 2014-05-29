@@ -5,6 +5,14 @@
  * @package alpha_lite
  */
 
+/** ===============
+ * Constants and important files
+ */
+define( 'AL_NAME', 'Alpha Lite' );
+define( 'AL_AUTHOR', 'Dewane Mutunga' );
+define( 'AL_VERSION', '1.0' );
+define( 'AL_HOME', 'http://dewanemutunga.com' );
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -125,10 +133,17 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-/** ===============
- * Constants and important files
+/**
+ * fallback for empty nav menus
  */
-define( 'AL_NAME', 'Alpha Lite' );
-define( 'AL_AUTHOR', 'Dewane Mutunga' );
-define( 'AL_VERSION', '1.0' );
-define( 'AL_HOME', 'http://dewanemutunga.com' );
+function alpha_lite_nav_fallback() { ?>
+	<div class="default-menu-container">
+		<ul class="menu nav-menu">
+			<li class="menu-item">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo get_bloginfo( 'description' ); ?>">
+					<?php _e( 'Home', 'alpha-lite' ); ?>
+				</a>
+			</li>
+		</ul>
+	</div>
+<?php }
