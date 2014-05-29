@@ -16,9 +16,15 @@
 		<div class="main">
 			<footer id="colophon" class="site-footer inner" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'alpha_lite' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'alpha_lite' ), 'WordPress' ); ?></a>
-					<span class="sep"> | </span>
-					<?php printf( __( 'Theme: %1$s by %2$s.', 'alpha_lite' ), 'alpha_lite', '<a href="http://dewanemutunga.com" rel="designer">Dewane Mutunga</a>' ); ?>
+					<?php
+						$credits = __( 'Built with WordPress & <a href="' . AL_HOME . '">' . AL_NAME . '</a>', 'alpha_lite' );        
+                        // If copyright & credits are left empty or have not been set, display default info.
+                        if ( '' == get_theme_mod( 'alpha_lite_credits_copyright' ) ) :
+                                echo $credits;
+                        else :
+                                echo get_theme_mod( 'alpha_lite_credits_copyright', $credits );
+                        endif;
+					?>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div>
