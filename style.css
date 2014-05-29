@@ -407,7 +407,7 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	border: 1px solid #D5E1E4;
+	border: none;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -430,7 +430,7 @@ textarea {
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
 }
-#secondary .search-field {
+#secondary input[type="search"] {
 	min-width: 215px;
 	border: none;
 	padding: 8px
@@ -523,12 +523,12 @@ a:active {
 	background: #748BA0;
 }
 .header-menu a {
-	color: #d2625a;
+	color: #fff;
 	font-size: 14px;
 	text-decoration: none;
 }
 .header-menu a:hover {
-	color: #e44e44;
+	color: #999;
 	font-size: 14px;
 	text-decoration: none;
 }
@@ -601,6 +601,13 @@ a:active {
 }
 .store-pagination .next.page-numbers {
 	padding: 0 0 0 2em;
+}
+.social-links {
+	margin-top: 10px;
+}
+.social-links .fa {
+	color: #fff;
+	margin-right: 3px;
 }
 .navigation a,
 .store-pagination a,
@@ -860,11 +867,12 @@ a:active {
 	margin-right: 6px;
 	color: #45637f;
 }
+.entry-meta .fa {
+	margin-right: 6px;
+	color: #45637f;
+}
 .comments-link .fa {
 	margin-right: 3px;
-}
-.fa {
-	color: #45637f;
 }
 .cats-tags {
 	display: block;
@@ -927,6 +935,7 @@ body {
 .post-footer-author .avatar {
 	border-radius: 50%;
 	margin: 6px 6px 12px 0;
+	vertical-align: middle;
 }
 .author-name {
 	display: inline-block;
@@ -938,7 +947,7 @@ body {
 Header
 --------------------------------------------------------------*/
 #header-area {
-	background: #fff;
+	background: #d2625a;
 	padding: 30px 0 30px 0;
 }
 .site-header.inner {
@@ -952,7 +961,7 @@ Header
 	margin-bottom: 10px;
 }
 .site-title a {
-	color: #d2625a;
+	color: #fff;
 	text-decoration: none;
 	font-size: 2em;
 	font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, sans-serif;
@@ -967,7 +976,7 @@ Header
 	font-family: 'Nobile', 'Lucida Grande',  sans-serif;
 	font-size: 13px;
 	font-weight: normal;
-	color: #d2625a;
+	color: #333;
 }
 
 
