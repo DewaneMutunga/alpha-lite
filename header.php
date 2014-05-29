@@ -6,6 +6,12 @@
  *
  * @package alpha_lite
  */
+ 
+ /**
+ * the template for the document <head>
+ */
+$title = get_bloginfo('name');
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -23,7 +29,17 @@
 		<div class="main">
 			<header id="masthead" class="site-header inner" role="banner">
 				<div class="site-branding">
-					<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+					<span class="site-title">
+						<?php if ( get_theme_mod( 'alpha_lite_logo' ) ) : ?>
+						    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						        <img src="<?php echo get_theme_mod( 'alpha_lite_logo' ); ?>" alt="<?php echo esc_attr( $title ); ?>">
+						    </a>
+						<?php else : ?>
+						    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( $title ); ?>">
+						        <?php echo $title; ?>
+						    </a>
+						<?php endif; ?>
+					</span>
 					<h1 class="site-description"><?php bloginfo( 'description' ); ?></h1>
 					<nav id="header-navigation" class="header-menu" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
