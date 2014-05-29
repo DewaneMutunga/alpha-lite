@@ -124,3 +124,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/** ===============
+ * Constants and important files
+ */
+define( 'AL_NAME', 'Alpha Lite' );
+define( 'AL_AUTHOR', 'Dewane Mutunga' );
+define( 'AL_VERSION', '1.0' );
+define( 'AL_HOME', 'http://dewanemutunga.com' );
