@@ -67,7 +67,8 @@ function alpha_lite_customize_register( $wp_customize ) {
 	
 	// Footer Credits & Copyright
 	$wp_customize->add_setting( 'alpha_lite_credits_copyright', array( 
-		'default'	=> null 
+		'default'	=> null,
+		'sanitize_callback' => 'alpha_lite_sanitize_link_text' 
 	) );
 	$wp_customize->add_control( 'alpha_lite_credits_copyright', array(
 		'label'		=> __( 'Footer Credits & Copyright', 'alpha_lite' ),
@@ -88,7 +89,8 @@ function alpha_lite_customize_register( $wp_customize ) {
 	
 	// Twitter
 	$wp_customize->add_setting( 'alpha_lite_twitter', array( 
-		'default'	=> null
+		'default'	=> null,
+		'sanitize_callback' => 'alpha_lite_sanitize_link_text' 
 	) );
 	$wp_customize->add_control( 'alpha_lite_twitter', array(
 		'label'		=> __( 'Twitter Profile URL', 'alpha_lite' ),
@@ -98,7 +100,8 @@ function alpha_lite_customize_register( $wp_customize ) {
 	
 	// Facebook
 	$wp_customize->add_setting( 'alpha_lite_facebook', array( 
-		'default'	=> null 
+		'default'	=> null,
+		'sanitize_callback' => 'alpha_lite_sanitize_link_text' 
 	) );
 	$wp_customize->add_control( 'alpha_lite_facebook', array(
 		'label'		=> __( 'Facebook Profile URL', 'alpha_lite' ),
@@ -108,7 +111,8 @@ function alpha_lite_customize_register( $wp_customize ) {
 	
 	// GPlus
 	$wp_customize->add_setting( 'alpha_lite_gplus', array( 
-		'default'	=> null 
+		'default'	=> null,
+		'sanitize_callback' => 'alpha_lite_sanitize_link_text' 
 	) );
 	$wp_customize->add_control( 'alpha_lite_gplus', array(
 		'label'		=> __( 'Google Plus Profile URL', 'alpha_lite' ),
@@ -118,7 +122,8 @@ function alpha_lite_customize_register( $wp_customize ) {
 	
 	// LinkedIn
 	$wp_customize->add_setting( 'alpha_lite_linkedin', array( 
-		'default'	=> null 
+		'default'	=> null,
+		'sanitize_callback' => 'alpha_lite_sanitize_link_text' 
 	) );
 	$wp_customize->add_control( 'alpha_lite_linkedin', array(
 		'label'		=> __( 'LinkedIn Profile URL', 'alpha_lite' ),
@@ -130,33 +135,11 @@ add_action( 'customize_register', 'alpha_lite_customize_register' );
 
 
 /** ===============
- * Sanitize checkbox options
+ * Sanitize text input to allow anchors
  */
-function alpha_lite_sanitize_checkbox( $input ) {
-    if ( $input == 1 ) {
-        return 1;
-    } else {
-        return 0;
-    }
+function shoppette_sanitize_link_text( $input ) {
+    return strip_tags( stripslashes( $input ), '<a>' );
 }
-
-
-/** ===============
- * Sanitize radio options
- */
-function alpha_lite_sanitize_radio( $input ) {
-    $valid = array(
-		'excerpt'		=> 'Excerpt',
-		'full_content'	=> 'Full Content'
-    );
- 
-    if ( array_key_exists( $input, $valid ) ) {
-        return $input;
-    } else {
-        return '';
-    }
-}
-
 
 /** ===============
  * Sanitize text input
@@ -164,6 +147,22 @@ function alpha_lite_sanitize_radio( $input ) {
 function alpha_lite_sanitize_text( $input ) {
     return strip_tags( stripslashes( $input ) );
 }
+
+/** ===============
+ * Add Customizer UI styles to the <head> only on Customizer page
+ */
+function alpha_lite_customizer_styles() { ?>
+	<style type="text/css">
+		body { background: #fff; }
+		#customize-controls #customize-theme-controls .description { display: block; color: #999; margin: 2px 0 15px; font-style: italic; }
+		textarea, input, select, .customize-description { font-size: 12px !important; }
+		.customize-control-title { font-size: 13px !important; margin: 10px 0 3px !important; }
+		.customize-control label { font-size: 12px !important; }
+		#customize-control-shoppette_read_more { margin-bottom: 30px; }
+		#customize-control-shoppette_store_front_count input { width: 50px; }
+	</style>
+<?php }
+add_action('customize_controls_print_styles', 'alpha_lite_customizer_styles');
 
 
 /**
