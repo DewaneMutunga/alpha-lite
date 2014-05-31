@@ -127,3 +127,13 @@ function alpha_lite_nav_fallback() { ?>
 		</ul>
 	</div>
 <?php }
+
+/**
+ * Only show regular posts in search results
+ */
+function alpha_lite_search_filter( $query ) {
+	if ( $query->is_search && !is_admin() )
+		$query->set( 'post_type', 'post' );
+	return $query;
+}
+add_filter( 'pre_get_posts','alpha_lite_search_filter' );
