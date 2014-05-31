@@ -945,10 +945,10 @@ body {
 	display: inline-block;
 	font-size: 18px;
 }
-.archive .page-header {
+.archive .page-header, .error-404 .page-header, .error-404 p {
 	background: #45637f;
 }
-.archive .page-title {
+.archive .page-title, .error-404 .page-title, .error-404 p {
 	padding: 15px 20px;
 	color: #fff;
 }
@@ -956,6 +956,21 @@ body {
 	font-family: 'Nobile', 'Lucida Grande',  sans-serif;
 	font-size: 16px;
 	font-weight: 300;
+}
+.error404 #primary {
+	float: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 640px;
+}
+.error-404 {
+	margin-top: 40px;
+}
+.error-404 .page-header h1 {
+	margin-bottom: -20px;
+}
+.error-404 #search-form {
+	margin-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
