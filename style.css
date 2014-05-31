@@ -497,6 +497,7 @@ a:active {
 	position: absolute;
 		right: 0;
 		top: 20px;
+		margin-right: 30px;
 }
 .main-navigation ul,
 .header-menu ul {
@@ -980,6 +981,9 @@ Header
 	font-size: 13px;
 	font-weight: normal;
 	color: #333;
+}
+.site-branding {
+	padding: 16px;
 }
 
 
