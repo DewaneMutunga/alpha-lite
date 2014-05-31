@@ -945,7 +945,18 @@ body {
 	display: inline-block;
 	font-size: 18px;
 }
-
+.archive .page-header {
+	background: #45637f;
+}
+.archive .page-title {
+	padding: 15px 20px;
+	color: #fff;
+}
+.archive .author-description {
+	font-family: 'Nobile', 'Lucida Grande',  sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
 
 /*--------------------------------------------------------------
 Header
