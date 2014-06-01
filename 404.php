@@ -13,12 +13,12 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'alpha_lite' ); ?></h1>
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'alpha_lite' ); ?></p>
+					<div class="error-description"><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'alpha_lite' ); ?></div>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
 
-					<?php get_search_form(); ?>
+					<p><?php get_search_form(); ?></p>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 

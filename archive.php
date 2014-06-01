@@ -24,7 +24,7 @@ get_header(); ?>
 							single_tag_title();
 
 						elseif ( is_author() ) :
-							printf( __( 'Author: %s', 'alpha_lite' ), '<span class="vcard">' . get_the_author() . '</span>' . '</br>' . '<span class="author-description">' . get_the_author_meta( 'description' ) . '</span>' );
+							printf( __( 'Author: %s', 'alpha_lite' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
 						elseif ( is_day() ) :
 							printf( __( 'Day: %s', 'alpha_lite' ), '<span>' . get_the_date() . '</span>' );
@@ -44,8 +44,11 @@ get_header(); ?>
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
-					if ( ! empty( $term_description ) ) :
+					$author_description = get_the_author_meta( 'description' );
+					if ( is_category() || is_tag() && ! empty( $term_description ) ) :
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
+					elseif ( is_author() && '' != $author_description ) :
+						printf( '<div class="author-description">%s</div>', $author_description );
 					endif;
 				?>
 			</header><!-- .page-header -->
