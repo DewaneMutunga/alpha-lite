@@ -8,7 +8,7 @@
 	<?php 
 		if ( has_post_thumbnail() ) : ?>
 			<div class="featured-img-container">
-				<?php the_post_thumbnail( 'content-thumb', array( 'class' => 'featured-img' ) ); ?>
+				<?php the_post_thumbnail(); ?>
 			</div>
 		<?php
 		endif;

@@ -9,7 +9,7 @@
 		if ( has_post_thumbnail() ) : ?>
 			<div class="featured-img-container">
 				<a href="<?php the_permalink(); ?>" rel="bookmark">
-					<?php the_post_thumbnail( 'content-thumb', array( 'class' => 'featured-img' ) ); ?>
+					<?php the_post_thumbnail(); ?>
 				</a>
 			</div>
 		<?php endif;
