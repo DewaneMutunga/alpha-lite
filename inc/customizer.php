@@ -137,7 +137,7 @@ add_action( 'customize_register', 'alpha_lite_customize_register' );
 /** ===============
  * Sanitize text input to allow anchors
  */
-function shoppette_sanitize_link_text( $input ) {
+function alpha_lite_sanitize_link_text( $input ) {
     return strip_tags( stripslashes( $input ), '<a>' );
 }
 
