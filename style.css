@@ -945,14 +945,13 @@ body {
 	display: inline-block;
 	font-size: 18px;
 }
-.archive .page-header, .error-404 .page-header, .error-404 p {
+.page-header {
 	background: #45637f;
-}
-.archive .page-title, .error-404 .page-title, .error-404 p {
 	padding: 15px 20px;
 	color: #fff;
+	margin-bottom: 30px;
 }
-.archive .author-description {
+.author-description, .taxonomy-description {
 	font-family: 'Nobile', 'Lucida Grande',  sans-serif;
 	font-size: 16px;
 	font-weight: 300;
@@ -965,12 +964,6 @@ body {
 }
 .error-404 {
 	margin-top: 40px;
-}
-.error-404 .page-header h1 {
-	margin-bottom: -20px;
-}
-.error-404 #search-form {
-	margin-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
