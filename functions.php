@@ -13,13 +13,6 @@ define( 'AL_AUTHOR', 'Dewane Mutunga' );
 define( 'AL_VERSION', '1.0' );
 define( 'AL_HOME', 'http://dewanemutunga.com' );
 
-/**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 678; /* pixels */
-}
-
 if ( ! function_exists( 'alpha_lite_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -29,7 +22,14 @@ if ( ! function_exists( 'alpha_lite_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function alpha_lite_setup() {
-
+	
+	/**
+	 * Set the content width based on the theme's design and stylesheet.
+	 */
+	if ( ! isset( $content_width ) ) {
+		$content_width = 678; /* pixels */
+	}
+	
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
