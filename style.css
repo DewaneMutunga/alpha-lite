@@ -4,7 +4,7 @@ Theme URI: https://github.com/DewaneMutunga/alpha-lite
 Author: Dewane Mutunga
 Author URI: http://dewanemutunga.com
 Description: Alpha Lite is a simple theme for WordPress professionals.
-Version: 1.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: alpha_lite
@@ -42,10 +42,9 @@ and Blueprint http://www.blueprintcss.org/
 	10.1 - Posts and pages
 	10.2 - Asides
 	10.3 - Comments
-11.0 - Infinite scroll
-12.0 - Media
-	12.1 - Captions
-	12.2 - Galleries
+11.0 - Media
+	11.1 - Captions
+	11.2 - Galleries
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -112,29 +111,7 @@ a img {
 }
 
 /*--------------------------------------------------------------
-1.1 - Structure - read the description and the CSS rules
-*
-* If you're already familiar with Underscores, it's important
-* to know that the page-width HTML structure has been replaced
-* in this theme by a full-width structure... that way full-width
-* designs can be created as well as page-width if you choose to
-* do so. 
-*
-* The #page that originally wrapped the header, content, and footer
-* has been removed and those three sections have been given their
-* own full-width HTML structure like so...
-*
-* <div class="area-name full">
-*	<div class="main">
-*		<header class="element-name inner">
-*			...header stuff...
-*		</header>
-*	</div>
-* </div>
-*
-* Controlling the page content width is as simple as adjusting
-* the max-width property of the .main class. THAT VALUE NEEDS TO
-* MATCH THE FIRST MEDIA QUERY VALUE IN THE RESPONSIVE SECTION.
+1.1 - Structure 
 --------------------------------------------------------------*/
 .full { /* this class creates the full-width structure */
 	width: 100%;
@@ -1073,22 +1050,8 @@ Footer
 	text-decoration: none;
 }
 
-
 /*--------------------------------------------------------------
-11.0 Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-	display: none;
-}
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
-.infinity-end.neverending .site-footer {
-	display: block;
-}
-
-/*--------------------------------------------------------------
-12.0 Media
+11.0 Media
 --------------------------------------------------------------*/
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
@@ -1106,7 +1069,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-12.1 Captions
+11.1 Captions
 --------------------------------------------------------------*/
 .wp-caption {
 	margin-bottom: 1.5em;
@@ -1124,7 +1087,7 @@ object {
 }
 
 /*--------------------------------------------------------------
-12.2 Galleries
+11.2 Galleries
 --------------------------------------------------------------*/
 .gallery {
 	margin-bottom: 1.5em;
