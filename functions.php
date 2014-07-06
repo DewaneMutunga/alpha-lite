@@ -10,7 +10,7 @@
  */
 define( 'AL_NAME', 'Alpha Lite' );
 define( 'AL_AUTHOR', 'Dewane Mutunga' );
-define( 'AL_VERSION', '1.0' );
+define( 'AL_VERSION', '1.0.1' );
 define( 'AL_HOME', 'http://dewanemutunga.com' );
 
 global $content_width;
