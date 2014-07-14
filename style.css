@@ -829,7 +829,7 @@ a:active {
 body {
 	background: #d2625a;
 }
-.sidenote, .edd_has_purchased {
+.sidenote {
 	color: #ffffff;
 	background: #45637f;
 	border: 15px solid #748BA0;
