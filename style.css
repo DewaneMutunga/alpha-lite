@@ -1210,4 +1210,11 @@ Responsive
 		display: inline-block;
 		float: none;
 	}
+	.posted-on,
+	.comments-link {
+		margin-right: 1em;
+	}
+	.entry-meta .read-more {
+		position: inherit;
+	}
 }
