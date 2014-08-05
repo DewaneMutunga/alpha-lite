@@ -966,6 +966,7 @@ Header
 .pingback {
 	position: relative;
 	font-size: 13px;
+	margin-top: 40px;
 }
 .comment-author {
 	background: #F5F5F5;
