@@ -10,7 +10,7 @@
  */
 define( 'AL_NAME', 'Alpha Lite' );
 define( 'AL_AUTHOR', 'Dewane Mutunga' );
-define( 'AL_VERSION', '1.0.3' );
+define( 'AL_VERSION', '1.0.4' );
 define( 'AL_HOME', 'http://dewanemutunga.com' );
 
 if ( ! function_exists( 'alpha_lite_setup' ) ) :
